@@ -16,8 +16,7 @@ public class GameService {
 
 	@Autowired
 	private GameRepository repository;
-	
-	
+
 	// Busacando o objeto pelo o id e atribuindo para um dto especifico
 	@Transactional(readOnly = true)
 	public GameDTO findById(Long id) {
@@ -25,8 +24,8 @@ public class GameService {
 		GameDTO dto = new GameDTO(result);
 		return dto;
 	}
-	
-	//Buscando todos os objetos e retornando os atribuidos para um dto especifico
+
+	// Buscando todos os objetos e retornando os atribuidos para um dto especifico
 	@Transactional(readOnly = true)
 	public List<GameMinDTO> findAll() {
 		List<Game> result = repository.findAll();
