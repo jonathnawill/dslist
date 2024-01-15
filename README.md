@@ -22,6 +22,12 @@ A API também possui um endpoint que permite ao usuário organizar a lista da ma
 
 ## :bookmark_tabs: Documentação da API
 
+### URL em produção
+```https
+dslist-production-9a08.up.railway.app/
+```
+
+
 #### URL base
 
 ```https
